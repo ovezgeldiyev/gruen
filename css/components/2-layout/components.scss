@@ -1,0 +1,61 @@
+h1 {
+  font-weight: 700;
+  font-size: 35px;
+  line-height: 120%;
+  color: $black;
+}
+
+h2 {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 120%;
+  color: $primary;
+}
+.main {
+  overflow: hidden;
+}
+.button {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+}
+.logo {
+  position: absolute;
+  top: -18px;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 295px;
+  background-color: $white;
+  border-radius: 50%;
+  border: 6px solid $primary;
+  img {
+    width: 100%;
+  }
+  h1 {
+    display: none;
+  }
+}
+.burger {
+  position: absolute;
+  top: calc(100% + 30px);
+  left: 50%;
+  cursor: pointer;
+  @include transition;
+  width: 45px;
+  height: 45px;
+  transform: translateX(-50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  &:hover {
+    opacity: 0.8;
+  }
+  img {
+    width: 100%;
+    &.close {
+        display: none;
+    }
+  }
+}
